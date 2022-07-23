@@ -11,7 +11,7 @@
 sample\\\ offset -2 -4 1 10 #fffba5 #404040 #000000 0 1;
 #X obj 225 39 tgl 30 1 \$1-on_off \$1-on_off_rcv on/off 32 26 0 10
 #9bc99d #000000 #000000 0 1;
-#X obj 226 73 tgl 30 1 \$1-record \$1-record_rcv record 32 26 1 10
+#X obj 225 73 tgl 30 1 \$1-record \$1-record_rcv record 32 26 1 10
 #ffc7c6 #000000 #000000 0 1;
 #X obj 12 526 bng 15 250 50 0 midi-properties midi-properties_rcv midi-properties
 17 7 0 10 #fcfcfc #000000 #000000;
