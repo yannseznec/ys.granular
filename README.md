@@ -1,5 +1,5 @@
 # ys.granular
- a pretty standard granular audio exploration system, made in Pure Data (Pd) 'vanilla'.
+ a pretty standard granular audio exploration system, made in Pure Data (Pd) 'vanilla'. an improvement on the various other granular things i've made...this is the last one now! i promise! 
 
 the main patch is found in _main.pd
 
