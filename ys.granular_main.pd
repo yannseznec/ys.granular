@@ -84,70 +84,71 @@ grainplay\\\ chance -2 -4 1 10 #eab8fe #ffffff #ffffff 12700 1;
 0 0;
 #X obj 12 545 ys.granular_brain \$1;
 #X msg 476 477 vis 1;
-#N canvas 293 25 447 847 \$1-help 0;
+#N canvas 293 25 447 847 \$1-help 1;
 #X obj 20 24 cnv 15 400 800 empty empty ys.granular 20 12 1 25 #f1f4f4
 #404040 0;
-#X text 34 217 most parameters can be accessed through send/receive
+#X text 34 208 most parameters can be accessed through send/receive
 objects. to control a parameter the best option is to use the "receive"
 setting for the GUI slider (or toggle or bang).;
-#X text 29 214 comment;
-#X text 34 117 to use \, create a top-level patch and add the granular_main.pd
-patch as an object \, with an integer argument that acts as an identifier.
-;
-#X text 34 167 you can have multiple instances of the granular_main
-patch running \, so long as they each have different identifier numbers.
-;
-#X text 34 278 these are accessed with the identifier number followed
-by the name.;
-#X obj 216 311 loadbang;
-#X obj 216 332 i \$1;
-#X floatatom 216 353 5 0 0 1 this\ is\ the\ identifier - - 0;
-#X obj 39 352 send \$1-sample_offset_rcv;
-#X obj 42 328 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 #fcfcfc
+#X obj 216 306 loadbang;
+#X obj 216 327 i \$1;
+#X floatatom 216 348 5 0 0 1 this\ is\ the\ identifier - - 0;
+#X obj 39 347 send \$1-sample_offset_rcv;
+#X obj 42 323 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 #fcfcfc
 #000000 #000000 0 1;
-#X text 33 310 try me!;
-#X text 34 379 nearly all of the parameters are float values between
+#X text 33 305 try me!;
+#X text 33 405 nearly all of the parameters are float values between
 0-1.;
-#X text 34 401 for "pitch" \, the pitch is unchanged at a value of
+#X text 33 427 for "pitch" \, the pitch is unchanged at a value of
 0.25.;
-#X msg 34 541 \; \$1-grain_pitch_rcv 0.25 \; \$1-grain_size_rcv 0.5
+#X msg 34 564 \; \$1-grain_pitch_rcv 0.25 \; \$1-grain_size_rcv 0.5
 \; \$1-sample_offset_rcv 0.5 \; \$1-offset_random_rcv 0.02 \; \$1-random_pitch_rcv
 0 \; \$1-random_panning_rcv 0.6 \; \$1-global_pan_rcv 0.5 \; \$1-autoplay_speed_rcv
 0.25 \; \$1-autoplay_reverse_rcv 0 \; \$1-freeze_rcv 0 \; \$1-autoplay_on_off_rcv
 0 \; \$1-on_off_rcv 1 \; \$1-volume_rcv 1 \; \$1-num_channels_rcv 2
 \; \$1-reverse_rcv 0 \; \$1-reverse_random_rcv 0 \; \$1-grain_density_rcv
 0.1 \; \$1-grainplay_chance_rcv 1 \;;
-#X obj 34 487 i \$1;
-#X floatatom 34 508 5 0 0 1 this\ is\ the\ identifier - - 0;
-#X obj 34 459 bng 15 250 50 0 empty empty load\\\ a\\\ set\\\ of\\\ values
+#X obj 34 510 i \$1;
+#X floatatom 34 531 5 0 0 1 this\ is\ the\ identifier - - 0;
+#X obj 34 482 bng 15 250 50 0 empty empty load\\\ a\\\ set\\\ of\\\ values
 17 7 0 10 #fcfcfc #000000 #000000;
-#X text 34 423 you can change a bunch of values at once using a message
+#X text 33 449 you can change a bunch of values at once using a message
 box like this...like a really clunky preset manager:;
-#X text 209 586 a few that aren't listed there:;
-#X msg 220 728 \; pd dsp 1;
-#X obj 220 703 loadbang;
-#X text 210 612 \$1-choose_sound_rcv;
+#X text 209 609 a few that aren't listed there:;
+#X msg 220 751 \; pd dsp 1;
+#X obj 220 726 loadbang;
+#X text 210 635 \$1-choose_sound_rcv;
 #X text 34 785 the send names for all of the GUI objects are the same
 as above \, without the "_rcv" suffix.;
-#X text 210 628 \$1-reset_pitch_rcv;
-#X text 334 613 (bang);
-#X text 333 629 (bang);
-#X text 209 646 \$1-record_rcv (toggle);
-#X text 208 663 \$1-play_one_grain_rcv;
-#X text 341 664 (bang);
-#X text 40 525 see this list for the accessible parameter names.;
+#X text 210 651 \$1-reset_pitch_rcv;
+#X text 334 636 (bang);
+#X text 333 652 (bang);
+#X text 209 669 \$1-record_rcv (toggle);
+#X text 208 686 \$1-play_one_grain_rcv;
+#X text 341 687 (bang);
+#X text 40 548 see this list for the accessible parameter names.;
 #X obj 40 65 cnv 15 1 1 empty empty a\\\ pretty\\\ standard\\\ granular\\\ audio\\\ exploration\\\ system
 0 0 0 12 #f1f3f3 #404040 0;
 #X obj 39 88 cnv 15 1 1 empty empty yannseznec.com\\\ yann@yannseznec.com
 0 0 0 12 #f1f3f3 #404040 0;
-#X connect 6 0 7 0;
-#X connect 7 0 8 0;
-#X connect 10 0 9 0;
-#X connect 15 0 16 0;
-#X connect 16 0 14 0;
-#X connect 17 0 15 0;
-#X connect 21 0 20 0;
-#X coords 0 -1 1 1 85 10 1 100 100;
+#X text 35 106 to use \, create a top-level patch and add the ys.granular_main.pd
+patch as an object \, with an integer argument that acts as an identifier.
+;
+#X text 34 157 you can have multiple instances of ys.granular_main.pd
+running \, so long as they each have different identifier numbers.
+;
+#X text 34 271 these are accessed with the identifier number followed
+by the name. from within the patch (like right now) \, use \$1.;
+#X text 34 372 from outside the patch \, the equivalent send argument
+would be "1-sample_offset_rcv".;
+#X connect 2 0 3 0;
+#X connect 3 0 4 0;
+#X connect 6 0 5 0;
+#X connect 11 0 12 0;
+#X connect 12 0 10 0;
+#X connect 13 0 11 0;
+#X connect 17 0 16 0;
+#X coords 0 847 1 846 85 10 0;
 #X restore 13 566 pd \$1-help;
 #X f 15;
 #X obj 476 498 s pd-\$1-help;
