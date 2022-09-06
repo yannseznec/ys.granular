@@ -4,3 +4,5 @@
 the main patch is found in _main.pd
 
 there's a help file in there too. you can have multiple instances of the granular part running at once.
+
+Here's a video that explains the patch in some detail: https://youtu.be/gRKfyIT_yF0

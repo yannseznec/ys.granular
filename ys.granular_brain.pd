@@ -1,4 +1,4 @@
-#N canvas 179 111 1223 761 10;
+#N canvas 216 111 1223 761 10;
 #N canvas 33 69 1369 803 autoplay 0;
 #X floatatom 279 367 5 0 0 0 - - - 0;
 #X obj 300 442 phasor~ 0.1;
@@ -673,6 +673,8 @@ need to convert the output to dB with rmstodb and also subtract by
 #X obj 43 730 s \$1-samplelength;
 #X obj 46 585 pack s float;
 #X msg 35 676 read -resize \$1 \$2-poly_grain-L \$2-poly_grain-R;
+#X obj 180 708 t b;
+#X obj 180 729 s \$1-visual;
 #X connect 1 0 5 0;
 #X connect 3 0 54 0;
 #X connect 4 0 1 0;
@@ -728,6 +730,8 @@ need to convert the output to dB with rmstodb and also subtract by
 #X connect 66 0 70 1;
 #X connect 67 0 66 0;
 #X connect 68 0 69 0;
+#X connect 68 0 72 0;
 #X connect 70 0 71 0;
 #X connect 71 0 68 0;
+#X connect 72 0 73 0;
 #X coords 0 761 1 760 400 600 0;
