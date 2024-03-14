@@ -559,6 +559,7 @@
 #X obj 784 78 array define \$1-poly_grain-R;
 #X obj 420 595 outlet~;
 #X obj 506 602 outlet~;
+#X obj 23 457 r \$1-sample_load;
 #X connect 1 0 5 0;
 #X connect 3 0 53 0;
 #X connect 4 0 1 0;
@@ -626,4 +627,5 @@
 #X connect 79 0 78 0;
 #X connect 81 0 69 0;
 #X connect 82 0 77 0;
+#X connect 87 0 81 0;
 #X coords 0 761 1 760 400 600 0;
