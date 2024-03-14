@@ -1,4 +1,4 @@
-#N canvas 0 139 1392 564 10;
+#N canvas 252 134 1392 564 10;
 #X obj 221 152 list prepend;
 #X obj 227 191 list trim;
 #X floatatom 206 282 5 0 0 0 - - - 0;
@@ -617,6 +617,7 @@
 #X obj 395 117 tgl 15 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000 0 1;
 #X msg 397 88 1;
 #X obj 484 76 loadbang;
+#X obj 202 8 loadbang;
 #X connect 0 0 1 0;
 #X connect 1 0 14 0;
 #X connect 1 0 53 0;
@@ -682,3 +683,4 @@
 #X connect 66 0 65 0;
 #X connect 67 0 66 0;
 #X connect 68 0 67 0;
+#X connect 69 0 38 0;
