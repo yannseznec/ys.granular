@@ -1,11 +1,11 @@
-#N struct 1029-scope float x float y float x1 float y1 float c1 float c2 float c3 float c4 array vector-min 1029-scope-element array vector-max 1029-scope-element float curx;
-#N struct 1029-scope-element float y;
+#N struct 1004-scope float x float y float x1 float y1 float c1 float c2 float c3 float c4 array vector-min 1004-scope-element array vector-max 1004-scope-element float curx;
+#N struct 1004-scope-element float y;
 #N canvas 117 137 959 665 12;
 #X obj 36 34 ys.granular_main 1;
 #X text 38 602 yann seznec // 2023 // yannseznec.com;
 #X obj 191 546 dac~;
 #X obj 533 309 ys.comport;
-#N canvas 283 49 940 778 mappings 1;
+#N canvas 283 49 940 778 mappings 0;
 #X obj 119 26 r analog0;
 #X obj 119 133 s 1-sample_offset_rcv;
 #X floatatom 119 50 5 0 0 0 - - - 0;
@@ -87,8 +87,10 @@
 #X obj 42 72 loadbang;
 #X msg 42 96 1;
 #X obj 485 453 s sample_load;
-#X obj 849 199 s 1-record_rcv;
-#X obj 838 172 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 884 223 s 1-record_rcv;
+#X obj 897 188 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
+#X obj 927 157 change;
+#X obj 928 132 r digital6;
 #X connect 0 0 2 0;
 #X connect 2 0 3 0;
 #X connect 3 0 54 0;
@@ -137,7 +139,7 @@
 #X connect 57 0 54 1;
 #X connect 58 0 59 0;
 #X connect 60 0 58 0;
-#X connect 61 0 82 0;
+#X connect 61 0 63 0;
 #X connect 62 0 61 0;
 #X connect 63 0 64 0;
 #X connect 64 0 65 0;
@@ -161,6 +163,8 @@
 #X connect 78 0 79 0;
 #X connect 79 0 54 1;
 #X connect 82 0 81 0;
+#X connect 83 0 82 0;
+#X connect 84 0 83 0;
 #X restore 508 396 pd mappings;
 #X obj 432 242 print;
 #N canvas 184 160 1219 712 soundloader 0;
