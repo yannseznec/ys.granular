@@ -1,11 +1,11 @@
-#N struct 1004-scope float x float y float x1 float y1 float c1 float c2 float c3 float c4 array vector-min 1004-scope-element array vector-max 1004-scope-element float curx;
-#N struct 1004-scope-element float y;
-#N canvas 373 207 959 665 12;
+#N struct 1079-scope float x float y float x1 float y1 float c1 float c2 float c3 float c4 array vector-min 1079-scope-element array vector-max 1079-scope-element float curx;
+#N struct 1079-scope-element float y;
+#N canvas 92 25 959 665 12;
 #X obj 36 34 ys.granular_main 1;
 #X text 38 602 yann seznec // 2023 // yannseznec.com;
 #X obj 191 546 dac~;
 #X obj 533 309 ys.comport;
-#N canvas 174 25 940 778 mappings 1;
+#N canvas 174 25 940 778 mappings 0;
 #X obj 200 167 r analog0;
 #X obj 200 274 s 1-sample_offset_rcv;
 #X floatatom 200 191 5 0 0 0 - - - 0;
