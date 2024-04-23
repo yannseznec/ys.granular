@@ -5,7 +5,7 @@
 #X text 42 624 yann seznec // 2023 // yannseznec.com;
 #X obj 186 593 dac~;
 #X obj 533 309 ys.comport;
-#N canvas 120 279 940 778 mappings 0;
+#N canvas 120 94 940 778 mappings 1;
 #X obj 200 167 r analog0;
 #X obj 200 274 s 1-sample_offset_rcv;
 #X floatatom 200 191 5 0 0 0 - - - 0;
@@ -97,6 +97,7 @@
 #X obj 562 603 s filterfreq;
 #X obj 873 331 sel 1;
 #X obj 873 355 s random_sound;
+#X obj 160 735 print;
 #X connect 0 0 2 0;
 #X connect 2 0 3 0;
 #X connect 3 0 51 0;
@@ -123,6 +124,7 @@
 #X connect 32 0 40 0;
 #X connect 32 0 52 0;
 #X connect 33 0 34 0;
+#X connect 33 0 91 0;
 #X connect 36 0 35 0;
 #X connect 37 0 47 0;
 #X connect 39 0 37 0;
