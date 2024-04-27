@@ -100,6 +100,8 @@
 #X obj 160 735 print;
 #X obj 231 781 s 1-reset_pitch_rcv;
 #X obj 81 579 s 1-random_panning_rcv;
+#X obj 109 383 print pitch;
+#X obj 309 728 print resetpitch;
 #X connect 0 0 2 0;
 #X connect 2 0 3 0;
 #X connect 3 0 51 0;
@@ -108,6 +110,7 @@
 #X connect 6 0 4 0;
 #X connect 9 0 10 0;
 #X connect 10 0 12 0;
+#X connect 10 0 94 0;
 #X connect 11 0 9 0;
 #X connect 13 0 14 0;
 #X connect 14 0 16 0;
@@ -128,6 +131,7 @@
 #X connect 33 0 34 0;
 #X connect 33 0 91 0;
 #X connect 36 0 92 0;
+#X connect 36 0 95 0;
 #X connect 37 0 47 0;
 #X connect 39 0 37 0;
 #X connect 41 0 26 0;
