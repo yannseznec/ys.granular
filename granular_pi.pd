@@ -106,6 +106,7 @@
 #X obj 93 338 / 4;
 #X obj 93 362 i;
 #X obj 154 390 / 255;
+#X obj 142 344 change;
 #X connect 0 0 2 0;
 #X connect 2 0 3 0;
 #X connect 3 0 51 0;
@@ -190,8 +191,9 @@
 #X connect 89 0 90 0;
 #X connect 96 0 99 0;
 #X connect 97 0 98 0;
-#X connect 98 0 96 0;
+#X connect 98 0 100 0;
 #X connect 99 0 10 0;
+#X connect 100 0 96 0;
 #X restore 508 396 pd mappings;
 #X obj 432 242 print;
 #N canvas 184 160 1219 712 soundloader 0;
