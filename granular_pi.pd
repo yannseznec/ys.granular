@@ -1,5 +1,5 @@
-#N struct 1024-scope float x float y float x1 float y1 float c1 float c2 float c3 float c4 array vector-min 1024-scope-element array vector-max 1024-scope-element float curx;
-#N struct 1024-scope-element float y;
+#N struct 1004-scope float x float y float x1 float y1 float c1 float c2 float c3 float c4 array vector-min 1004-scope-element array vector-max 1004-scope-element float curx;
+#N struct 1004-scope-element float y;
 #N canvas 92 25 959 665 12;
 #X obj 36 34 ys.granular_main 1;
 #X text 42 624 yann seznec // 2023 // yannseznec.com;
@@ -28,10 +28,10 @@
 #X floatatom 391 373 5 0 0 0 - - - 0;
 #X obj 199 488 s 1-grain_size_rcv;
 #X obj 391 498 s 1-grain_density_rcv;
-#X floatatom 198 545 5 0 0 0 - - - 0;
-#X obj 198 568 / 1023;
-#X obj 198 521 r analog6;
-#X obj 198 594 s 1-grainplay_chance_rcv;
+#X floatatom 89 523 5 0 0 0 - - - 0;
+#X obj 89 546 / 1023;
+#X obj 89 499 r analog6;
+#X obj 178 613 s 1-grainplay_chance_rcv;
 #X floatatom 389 545 5 0 0 0 - - - 0;
 #X obj 389 568 / 1023;
 #X obj 389 594 s 1-autoplay_speed_rcv;
@@ -41,7 +41,7 @@
 #X obj 45 104 change;
 #X obj 120 681 change;
 #X obj 109 805 s 1-on_off_rcv;
-#X obj 231 758 s 1-play_one_grain_rcv;
+#X obj 251 758 s 1-play_one_grain_rcv;
 #X obj 232 709 sel 1;
 #X obj 383 693 change;
 #X obj 424 818 s 1-autoplay_reverse_rcv;
@@ -98,6 +98,8 @@
 #X obj 873 331 sel 1;
 #X obj 873 355 s random_sound;
 #X obj 160 735 print;
+#X obj 231 781 s 1-reset_pitch_rcv;
+#X obj 81 579 s 1-random_panning_rcv;
 #X connect 0 0 2 0;
 #X connect 2 0 3 0;
 #X connect 3 0 51 0;
@@ -114,7 +116,7 @@
 #X connect 18 0 20 0;
 #X connect 19 0 82 0;
 #X connect 22 0 23 0;
-#X connect 23 0 25 0;
+#X connect 23 0 93 0;
 #X connect 24 0 22 0;
 #X connect 26 0 27 0;
 #X connect 27 0 28 0;
@@ -125,7 +127,7 @@
 #X connect 32 0 52 0;
 #X connect 33 0 34 0;
 #X connect 33 0 91 0;
-#X connect 36 0 35 0;
+#X connect 36 0 92 0;
 #X connect 37 0 47 0;
 #X connect 39 0 37 0;
 #X connect 41 0 26 0;
@@ -169,7 +171,7 @@
 #X connect 74 0 68 0;
 #X connect 75 0 76 0;
 #X connect 76 0 51 1;
-#X connect 79 0 78 0;
+#X connect 79 0 60 0;
 #X connect 80 0 79 0;
 #X connect 81 0 80 0;
 #X connect 82 0 83 0;
