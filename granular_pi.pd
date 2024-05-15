@@ -1,5 +1,5 @@
-#N struct 1024-scope float x float y float x1 float y1 float c1 float c2 float c3 float c4 array vector-min 1024-scope-element array vector-max 1024-scope-element float curx;
-#N struct 1024-scope-element float y;
+#N struct 1908-scope float x float y float x1 float y1 float c1 float c2 float c3 float c4 array vector-min 1908-scope-element array vector-max 1908-scope-element float curx;
+#N struct 1908-scope-element float y;
 #N canvas 92 25 959 665 12;
 #X obj 36 34 ys.granular_main 1;
 #X text 42 624 yann seznec // 2023 // yannseznec.com;
@@ -314,7 +314,7 @@
 #X obj 456 491 hsl 162 19 0 1 0 0 empty empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 457 516 * 124;
 #X obj 705 28 loadbang;
-#X obj 804 408 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 5 256;
+#X obj 804 408 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 6 256;
 #X obj 803 306 loadbang;
 #X obj 803 330 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 803 376 +;
