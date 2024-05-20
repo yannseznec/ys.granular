@@ -1,0 +1,16 @@
+#N canvas 237 229 450 300 10;
+#X msg 104 99 bang;
+#X msg 139 99 clear;
+#X floatatom 182 99 5 0 0 0 - - -;
+#X msg 50 100 seed 78;
+#X floatatom 104 149 5 0 0 0 - - -;
+#X obj 167 149 bng 15 250 50 0 empty empty empty 17 7 0 10 -262144
+-1 -1;
+#X text 208 58 same as urn but with vanilla;
+#X obj 104 127 vurnilla 8;
+#X connect 0 0 7 0;
+#X connect 1 0 7 0;
+#X connect 2 0 7 1;
+#X connect 3 0 7 0;
+#X connect 7 0 4 0;
+#X connect 7 1 5 0;

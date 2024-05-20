@@ -671,7 +671,6 @@
 #X connect 76 0 78 0;
 #X connect 77 0 76 0;
 #X connect 79 0 68 0;
-#X connect 79 0 105 0;
 #X connect 80 0 75 0;
 #X connect 85 0 79 0;
 #X connect 86 0 98 0;
