@@ -25,6 +25,7 @@
 #X obj 613 85 array size \$1-sample_selector;
 #X floatatom 204 383 5 0 0 0 - - - 0;
 #X obj 383 77 r \$1-randomSeed;
+#X text 194 484 5.13741e+07;
 #X connect 0 0 17 0;
 #X connect 1 0 0 0;
 #X connect 1 1 2 0;
