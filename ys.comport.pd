@@ -1,4 +1,4 @@
-#N canvas 162 170 1392 564 10;
+#N canvas 12 170 1392 564 10;
 #X obj 221 152 list prepend;
 #X obj 227 191 list trim;
 #X floatatom 206 282 5 0 0 0 - - - 0;
@@ -621,7 +621,7 @@
 #X obj 700 455 notein;
 #X floatatom 700 476 5 0 0 0 - - - 0;
 #X obj 1164 272 s digital8;
-#X obj 224 84 comport 0 1200;
+#X obj 224 84 comport 0 115200;
 #X connect 0 0 1 0;
 #X connect 1 0 13 0;
 #X connect 1 0 68 0;
