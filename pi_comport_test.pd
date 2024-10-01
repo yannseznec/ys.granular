@@ -1,8 +1,8 @@
-#N canvas 92 117 450 300 12;
+#N canvas 529 120 688 317 12;
 #X obj 127 62 ys.comport;
-#X obj 148 118 r analog0;
-#X obj 148 142 print analog0;
-#X obj 336 128 r digital6;
-#X obj 336 152 print digital6;
-#X connect 1 0 2 0;
-#X connect 3 0 4 0;
+#X obj 336 128 r digital0;
+#X obj 148 118 r analog4;
+#X obj 148 142 print analog4;
+#X obj 336 152 print digital0;
+#X connect 1 0 4 0;
+#X connect 2 0 3 0;
