@@ -1,4 +1,4 @@
-#N canvas 12 170 1392 564 10;
+#N canvas 124 264 1392 564 10;
 #X obj 221 152 list prepend;
 #X obj 227 191 list trim;
 #X floatatom 206 282 5 0 0 0 - - - 0;
@@ -579,12 +579,12 @@
 #X obj 449 359 s analog4;
 #X obj 514 355 s analog5;
 #X obj 578 355 s analog6;
-#X obj 178 383 s analog7;
-#X obj 244 381 s analog8;
-#X obj 323 377 s analog9;
-#X obj 406 395 s analog10;
-#X obj 479 399 s analog11;
-#X obj 551 400 s analog12;
+#X obj 388 457 s analog7;
+#X obj 465 456 s analog8;
+#X obj 544 421 s analog9;
+#X obj 619 422 s analog10;
+#X obj 692 426 s analog11;
+#X obj 764 427 s analog12;
 #X msg 212 38 devices;
 #X msg 475 39 close;
 #X msg 272 45 open 0;
