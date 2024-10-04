@@ -1,10 +1,10 @@
-#N struct 1053-scope float x float y float x1 float y1 float c1 float c2 float c3 float c4 array vector-min 1053-scope-element array vector-max 1053-scope-element float curx;
-#N struct 1053-scope-element float y;
-#N canvas 241 25 959 665 12;
+#N struct 1004-scope float x float y float x1 float y1 float c1 float c2 float c3 float c4 array vector-min 1004-scope-element array vector-max 1004-scope-element float curx;
+#N struct 1004-scope-element float y;
+#N canvas 0 207 959 665 12;
 #X obj 40 151 ys.granular_main 1;
 #X obj 190 710 dac~;
 #X obj 316 718 ys.comport;
-#N canvas 257 69 940 778 mappings 0;
+#N canvas 560 32 940 778 mappings 1;
 #X obj -4 307 s 1-sample_offset_rcv;
 #X floatatom 233 63 5 0 0 0 - - - 0;
 #X obj 200 214 / 1023;
@@ -117,6 +117,11 @@
 #X obj 1035 368 change;
 #X obj 1087 415 s 1-reverse_rcv;
 #X text 865 549 CHANGE ALL THIS WHEN THE BETTER SWITCH IS INSTALLED;
+#X obj 545 61 r digital1;
+#X obj 545 85 sel 1;
+#X obj 545 109 change;
+#X obj 544 167 s 1-play_one_grain_rcv;
+#X obj 546 140 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X connect 1 0 99 0;
 #X connect 2 0 38 0;
 #X connect 3 0 4 0;
@@ -211,6 +216,10 @@
 #X connect 106 0 27 0;
 #X connect 107 0 109 0;
 #X connect 109 0 110 0;
+#X connect 112 0 113 0;
+#X connect 113 0 114 0;
+#X connect 114 0 116 0;
+#X connect 116 0 115 0;
 #X restore 427 717 pd mappings;
 #X obj 487 170 r random_sound;
 #X obj 705 224 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
@@ -223,7 +232,7 @@
 #X obj 396 545 r filterfreq;
 #X obj 397 570 hsl 162 19 0 1 0 0 empty empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 398 595 * 124;
-#X obj 808 525 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 39 256;
+#X obj 808 525 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 44 256;
 #X obj 807 423 loadbang;
 #X obj 807 447 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 807 493 +;
@@ -246,7 +255,7 @@
 #X obj 503 330 %;
 #X obj 569 230 r numSounds;
 #X obj 468 420 t b f;
-#X obj 505 265 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 96 256;
+#X obj 505 265 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 99 256;
 #X obj 813 303 t b f;
 #X obj 807 101 ys.soundLoader;
 #X obj 800 48 loadbang;
