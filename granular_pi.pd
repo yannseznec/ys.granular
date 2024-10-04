@@ -122,6 +122,7 @@
 #X obj 545 109 change;
 #X obj 544 167 s 1-play_one_grain_rcv;
 #X obj 546 140 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
+#X obj 638 81 print;
 #X connect 1 0 99 0;
 #X connect 2 0 38 0;
 #X connect 3 0 4 0;
@@ -217,6 +218,7 @@
 #X connect 107 0 109 0;
 #X connect 109 0 110 0;
 #X connect 112 0 113 0;
+#X connect 112 0 117 0;
 #X connect 113 0 114 0;
 #X connect 114 0 116 0;
 #X connect 116 0 115 0;
