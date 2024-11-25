@@ -39,9 +39,9 @@
 #X obj 424 818 s 1-autoplay_reverse_rcv;
 #X obj 45 132 s 1-autoplay_on_off_rcv;
 #X obj 229 711 r digital0;
-#X obj 442 706 sel 0 1;
-#X msg 434 747 1;
-#X msg 467 749 0;
+#X obj 438 741 sel 0 1;
+#X msg 430 782 1;
+#X msg 463 784 0;
 #X obj 131 270 spigot;
 #X obj 73 150 sel 0 1;
 #X msg 65 191 1;
@@ -120,6 +120,7 @@
 #X msg 303 190 0;
 #X obj 63 76 print autoplaysetting;
 #X obj 140 759 print 4;
+#X obj 554 757 print;
 #X connect 1 0 80 0;
 #X connect 2 0 37 0;
 #X connect 3 0 4 0;
@@ -143,6 +144,7 @@
 #X connect 27 0 114 0;
 #X connect 27 0 86 0;
 #X connect 30 0 34 0;
+#X connect 30 0 115 0;
 #X connect 33 0 25 0;
 #X connect 34 0 35 0;
 #X connect 34 1 36 0;
