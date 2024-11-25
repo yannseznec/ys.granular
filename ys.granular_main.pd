@@ -11,7 +11,7 @@
 #X obj 226 234 cnv 15 95 100 empty empty autoplay 5 12 1 14 #e0e0e0 #404040 0;
 #X obj 232 309 hsl 80 15 0 1 0 1 \$1-autoplay_speed \$1-autoplay_speed_rcv speed -2 -4 1 10 #fcfcfc #000000 #000000 5684 1;
 #X obj 230 283 tgl 12 1 \$1-freeze \$1-freeze_rcv freeze 17 7 1 10 #fcfcfc #000000 #000000 0 1;
-#X obj 293 238 tgl 20 1 \$1-autoplay_on_off \$1-autoplay_on_off_rcv on/off -2 25 1 10 #9bc99d #000000 #000000 1 1;
+#X obj 293 238 tgl 20 0 \$1-autoplay_on_off \$1-autoplay_on_off_rcv on/off -2 25 1 10 #9bc99d #000000 #000000 0 1;
 #X obj 230 264 tgl 12 1 \$1-autoplay_reverse \$1-autoplay_reverse_rcv reverse 17 7 1 10 #fcfcfc #000000 #000000 0 1;
 #X obj 226 130 cnv 15 95 100 empty empty input 5 12 1 14 #e0e0e0 #404040 0;
 #X obj 230 206 tgl 15 0 \$1-input_monitor \$1-input_monitor_rcv monitor 17 7 1 10 #fcfcfc #000000 #000000 0 1;
