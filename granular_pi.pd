@@ -94,7 +94,7 @@
 #X msg 234 131 1023;
 #X floatatom 238 176 5 0 0 0 - - - 0;
 #X obj 879 270 r digital2;
-#X obj 45 80 r digital5;
+#X obj 42 33 r digital5;
 #X obj 222 818 sel 1;
 #X obj 116 707 r digital4;
 #X obj 841 404 r digital7;
@@ -123,6 +123,7 @@
 #X msg 50 721 0;
 #X obj 300 156 loadbang;
 #X msg 303 190 0;
+#X obj 63 76 print autoplaypin;
 #X connect 1 0 84 0;
 #X connect 2 0 37 0;
 #X connect 3 0 4 0;
@@ -194,6 +195,7 @@
 #X connect 87 0 2 0;
 #X connect 88 0 44 0;
 #X connect 89 0 26 0;
+#X connect 89 0 118 0;
 #X connect 90 0 29 0;
 #X connect 91 0 27 0;
 #X connect 92 0 94 0;
