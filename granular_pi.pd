@@ -123,7 +123,7 @@
 #X msg 50 721 0;
 #X obj 300 156 loadbang;
 #X msg 303 190 0;
-#X obj 63 76 print autoplaypin;
+#X obj 63 76 print autoplaysetting;
 #X connect 1 0 84 0;
 #X connect 2 0 37 0;
 #X connect 3 0 4 0;
@@ -143,6 +143,7 @@
 #X connect 25 0 74 0;
 #X connect 26 0 32 0;
 #X connect 26 0 38 0;
+#X connect 26 0 118 0;
 #X connect 27 0 73 0;
 #X connect 30 0 34 0;
 #X connect 33 0 25 0;
@@ -195,7 +196,6 @@
 #X connect 87 0 2 0;
 #X connect 88 0 44 0;
 #X connect 89 0 26 0;
-#X connect 89 0 118 0;
 #X connect 90 0 29 0;
 #X connect 91 0 27 0;
 #X connect 92 0 94 0;
