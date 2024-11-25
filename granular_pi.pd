@@ -97,9 +97,9 @@
 #X obj 932 403 r digital8;
 #X obj 840 458 change;
 #X obj 880 502 s 1-reverse_rcv;
-#X obj 545 61 r digital1;
-#X obj 545 85 sel 1;
-#X obj 545 109 change;
+#X obj 545 39 r digital1;
+#X obj 596 75 sel 1;
+#X obj 543 72 change;
 #X obj 544 167 s 1-play_one_grain_rcv;
 #X obj 546 140 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 671 106 print;
@@ -108,7 +108,7 @@
 #X obj 993 479 change;
 #X obj 912 591 tgl 19 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 359 656 r digital9;
-#X text 375 26 best bet in terms of startup values is probably to send a loadbang of some value into every switch;
+#X text 366 8 best bet in terms of startup values is probably to send a loadbang of some value into every switch;
 #X obj 141 34 loadbang;
 #X msg 141 58 0;
 #X obj 1015 389 loadbang;
@@ -121,6 +121,7 @@
 #X msg 303 190 0;
 #X obj 63 76 print autoplaysetting;
 #X obj 140 759 print 4;
+#X obj 622 142 print;
 #X connect 1 0 80 0;
 #X connect 2 0 37 0;
 #X connect 3 0 4 0;
@@ -196,9 +197,10 @@
 #X connect 89 0 100 0;
 #X connect 90 0 91 0;
 #X connect 90 0 98 0;
-#X connect 92 0 93 0;
-#X connect 93 0 94 0;
-#X connect 94 0 96 0;
+#X connect 92 0 94 0;
+#X connect 93 0 96 0;
+#X connect 94 0 116 0;
+#X connect 94 0 93 0;
 #X connect 96 0 95 0;
 #X connect 98 0 101 0;
 #X connect 99 0 98 0;
