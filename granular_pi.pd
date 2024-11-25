@@ -221,6 +221,7 @@
 #X connect 115 0 27 0;
 #X connect 116 0 117 0;
 #X connect 117 0 51 0;
+#X connect 117 0 50 0;
 #X restore 427 717 pd mappings;
 #X obj 487 170 r random_sound;
 #X obj 705 224 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
