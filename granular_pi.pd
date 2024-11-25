@@ -35,7 +35,7 @@
 #X obj 317 761 change;
 #X obj 105 855 s 1-on_off_rcv;
 #X obj 307 872 s 1-play_one_grain_rcv;
-#X obj 383 693 change;
+#X obj 425 705 change;
 #X obj 424 818 s 1-autoplay_reverse_rcv;
 #X obj 45 132 s 1-autoplay_on_off_rcv;
 #X obj 229 711 r digital0;
@@ -112,8 +112,8 @@
 #X msg 141 58 0;
 #X obj 1015 389 loadbang;
 #X msg 1015 413 0;
-#X obj 521 657 loadbang;
-#X msg 524 691 0;
+#X obj 521 635 loadbang;
+#X msg 522 664 0;
 #X obj 47 687 loadbang;
 #X msg 50 721 0;
 #X obj 300 156 loadbang;
@@ -121,6 +121,8 @@
 #X obj 63 76 print autoplaysetting;
 #X obj 140 759 print 4;
 #X obj 554 757 print;
+#X obj 458 634 loadbang;
+#X msg 459 663 1;
 #X connect 1 0 80 0;
 #X connect 2 0 37 0;
 #X connect 3 0 4 0;
@@ -213,7 +215,6 @@
 #X connect 106 0 99 0;
 #X connect 106 0 90 0;
 #X connect 107 0 108 0;
-#X connect 108 0 30 0;
 #X connect 108 0 42 0;
 #X connect 109 0 110 0;
 #X connect 110 0 27 0;
@@ -221,6 +222,8 @@
 #X connect 111 0 112 0;
 #X connect 112 0 51 0;
 #X connect 112 0 50 0;
+#X connect 116 0 117 0;
+#X connect 117 0 30 0;
 #X restore 427 717 pd mappings;
 #X obj 487 170 r random_sound;
 #X obj 705 224 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
