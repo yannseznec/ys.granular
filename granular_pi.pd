@@ -1,5 +1,5 @@
-#N struct 1006-scope float x float y float x1 float y1 float c1 float c2 float c3 float c4 array vector-min 1006-scope-element array vector-max 1006-scope-element float curx;
-#N struct 1006-scope-element float y;
+#N struct 1005-scope float x float y float x1 float y1 float c1 float c2 float c3 float c4 array vector-min 1005-scope-element array vector-max 1005-scope-element float curx;
+#N struct 1005-scope-element float y;
 #N canvas 246 25 959 665 12;
 #X obj 40 151 ys.granular_main 1;
 #X obj 190 710 dac~;
@@ -234,7 +234,7 @@
 #X obj 396 545 r filterfreq;
 #X obj 397 570 hsl 162 19 0 1 0 0 empty empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 398 595 * 124;
-#X obj 808 525 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 57 256;
+#X obj 808 525 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 58 256;
 #X obj 807 423 loadbang;
 #X obj 807 447 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 807 493 +;
@@ -268,6 +268,8 @@
 #X text 1041 409 this seems to have a tendency to double things;
 #X obj 492 509 print sample_select;
 #X text 46 741 yann seznec // 2024 // yannseznec.com;
+#X msg 577 114 \; pd dsp 1;
+#X obj 580 76 loadbang;
 #X connect 0 0 7 0;
 #X connect 0 1 8 0;
 #X connect 4 0 31 0;
@@ -313,3 +315,4 @@
 #X connect 39 0 40 0;
 #X connect 40 0 38 0;
 #X connect 41 0 38 1;
+#X connect 48 0 47 0;
