@@ -1,10 +1,10 @@
-#N struct 1005-scope float x float y float x1 float y1 float c1 float c2 float c3 float c4 array vector-min 1005-scope-element array vector-max 1005-scope-element float curx;
-#N struct 1005-scope-element float y;
+#N struct 1004-scope float x float y float x1 float y1 float c1 float c2 float c3 float c4 array vector-min 1004-scope-element array vector-max 1004-scope-element float curx;
+#N struct 1004-scope-element float y;
 #N canvas 246 25 959 665 12;
 #X obj 40 151 ys.granular_main 1;
 #X obj 190 710 dac~;
 #X obj 316 718 ys.comport;
-#N canvas 262 94 940 778 mappings 0;
+#N canvas 461 94 940 778 mappings 1;
 #X obj -4 307 s 1-sample_offset_rcv;
 #X floatatom 233 63 5 0 0 0 - - - 0;
 #X obj 200 214 / 1023;
@@ -122,6 +122,8 @@
 #X obj 554 757 print;
 #X obj 458 634 loadbang;
 #X msg 459 663 1;
+#X obj 776 535 loadbang;
+#X msg 776 559 0;
 #X connect 1 0 80 0;
 #X connect 2 0 37 0;
 #X connect 3 0 4 0;
@@ -222,6 +224,8 @@
 #X connect 112 0 50 0;
 #X connect 115 0 116 0;
 #X connect 116 0 30 0;
+#X connect 117 0 118 0;
+#X connect 118 0 45 0;
 #X restore 427 717 pd mappings;
 #X obj 487 170 r random_sound;
 #X obj 705 224 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
@@ -234,7 +238,7 @@
 #X obj 396 545 r filterfreq;
 #X obj 397 570 hsl 162 19 0 1 0 0 empty empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 398 595 * 124;
-#X obj 808 525 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 58 256;
+#X obj 808 525 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 60 256;
 #X obj 807 423 loadbang;
 #X obj 807 447 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 807 493 +;
