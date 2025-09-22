@@ -1,6 +1,6 @@
-#N struct 1023-scope float x float y float x1 float y1 float c1 float c2 float c3 float c4 array vector-min 1023-scope-element array vector-max 1023-scope-element float curx;
-#N struct 1023-scope-element float y;
-#N canvas 445 115 959 665 12;
+#N struct 1004-scope float x float y float x1 float y1 float c1 float c2 float c3 float c4 array vector-min 1004-scope-element array vector-max 1004-scope-element float curx;
+#N struct 1004-scope-element float y;
+#N canvas 398 205 959 665 12;
 #X obj 146 551 dac~;
 #X text 38 602 yann seznec // 2024 // yannseznec.com;
 #X obj 37 16 ys.granular_main 2 test.wav;
