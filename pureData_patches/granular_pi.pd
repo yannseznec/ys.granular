@@ -194,8 +194,8 @@
 #X connect 83 0 29 0;
 #X connect 84 0 27 0;
 #X connect 85 0 87 0;
-#X connect 85 0 118 0;
 #X connect 86 0 96 0;
+#X connect 86 0 118 0;
 #X connect 87 0 88 0;
 #X connect 87 0 94 0;
 #X connect 87 0 117 0;
