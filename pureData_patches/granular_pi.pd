@@ -123,7 +123,6 @@
 #X msg 776 559 0;
 #X obj 804 739 print reverse_random;
 #X obj 993 648 print reverse;
-#X obj 1090 497 print digital7;
 #X connect 1 0 77 0;
 #X connect 2 0 37 0;
 #X connect 3 0 4 0;
@@ -195,7 +194,6 @@
 #X connect 84 0 27 0;
 #X connect 85 0 87 0;
 #X connect 86 0 96 0;
-#X connect 86 0 118 0;
 #X connect 87 0 88 0;
 #X connect 87 0 94 0;
 #X connect 87 0 117 0;
@@ -239,7 +237,7 @@
 #X obj 396 545 r filterfreq;
 #X obj 397 570 hsl 162 19 0 1 0 0 empty empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 398 595 * 124;
-#X obj 808 525 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 67 256;
+#X obj 808 525 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 68 256;
 #X obj 807 423 loadbang;
 #X obj 807 447 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 807 493 +;
