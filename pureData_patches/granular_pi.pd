@@ -1,10 +1,10 @@
-#N struct 1075-scope float x float y float x1 float y1 float c1 float c2 float c3 float c4 array vector-min 1075-scope-element array vector-max 1075-scope-element float curx;
-#N struct 1075-scope-element float y;
 #N canvas 246 25 959 665 12;
+#N struct \$0-scope float x float y float x1 float y1 float c1 float c2 float c3 float c4 array vector-min \$0-scope-element array vector-max \$0-scope-element float curx;
+#N struct \$0-scope-element float y;
 #X obj 40 151 ys.granular_main 1;
 #X obj 190 710 dac~;
 #X obj 316 718 ys.comport;
-#N canvas 461 94 940 778 mappings 1;
+#N canvas 8 33 1386 831 mappings 1;
 #X obj -4 307 s 1-sample_offset_rcv;
 #X floatatom 233 63 5 0 0 0 - - - 0;
 #X obj 200 214 / 1023;
@@ -124,6 +124,8 @@
 #X msg 459 663 1;
 #X obj 776 535 loadbang;
 #X msg 776 559 0;
+#X obj 804 739 print reverse_random;
+#X obj 993 648 print reverse;
 #X connect 1 0 80 0;
 #X connect 2 0 37 0;
 #X connect 3 0 4 0;
@@ -199,6 +201,7 @@
 #X connect 89 0 99 0;
 #X connect 90 0 91 0;
 #X connect 90 0 97 0;
+#X connect 90 0 120 0;
 #X connect 92 0 94 0;
 #X connect 93 0 96 0;
 #X connect 94 0 93 0;
@@ -208,6 +211,7 @@
 #X connect 98 1 97 1;
 #X connect 99 0 98 0;
 #X connect 100 0 45 0;
+#X connect 100 0 119 0;
 #X connect 101 0 30 0;
 #X connect 103 0 104 0;
 #X connect 104 0 26 0;
@@ -238,7 +242,7 @@
 #X obj 396 545 r filterfreq;
 #X obj 397 570 hsl 162 19 0 1 0 0 empty empty empty -2 -10 0 12 #fcfcfc #000000 #000000 0 1;
 #X obj 398 595 * 124;
-#X obj 808 525 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 64 256;
+#X obj 808 525 nbx 5 17 -1e+37 1e+37 0 1 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000 67 256;
 #X obj 807 423 loadbang;
 #X obj 807 447 bng 19 250 50 0 empty empty empty 0 -10 0 12 #fcfcfc #000000 #000000;
 #X obj 807 493 +;
